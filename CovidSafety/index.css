@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+p{
+    font-family: "Poppins";
+}
+h1,h2,h3,h4{
+    font-family: 'Lato';
+}
+.about-us-banner-container{
+   
+    background-image: url('https://res.cloudinary.com/dlwydxzdi/image/upload/v1713073689/BusinessApp/aboutus_qjt9rv.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.flex-col-container{
+    height:130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-heading{
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+    justify-self: center;
+    align-self:flex-start;
+}
+@media screen and (min-width:768px) {
+    .flex-col-container{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    .banner-heading{
+        justify-self: unset;
+        align-self:unset;
+        font-size: 24px;
+    }
+}
+.breadcrumb-container{
+    align-self: flex-end;
+}
+@media  screen and (min-width:1200px) {
+    .breadcrumb-container{
+        align-self: center;
+    }
+}
+.breadcrumb-container .breadcrumb-item a{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+}
+.breadcrumb-container .breadcrumb-item +.breadcrumb-item::before{
+    color: #fff;
+    font-size: 16px;
+}
+.breadcrumb-container .breadcrumb-item{
+    color: #fff;
+    font-size: 16px;
+}
+@media screen and (min-width:1200px) {
+    .breadcrumb-container .breadcrumb-item a{
+        font-size: 18px;
+    }
+    .breadcrumb-container .breadcrumb-item{
+        font-size: 18px;
+    }
+}
+
+.about-us-heading{
+    font-size: 22px;
+    color:#006DB7;
+    font-weight: bold;
+}
+.about-us-description{
+    font-size: 16px;
+    text-align: justify;
+}
+
+section .card{
+    height: 100%;
+}
+#safety-cards .card{
+    background-color: #18496b;
+}
+section .card .card-title{
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    text-align: start;
+}
+section .card .card-text{
+    font-size: 16px;
+    color: white;
+    text-align: start;
+}
+
+@media screen and (min-width:768px) {
+    .banner-heading{
+        font-size: 24px;
+    }
+    .about-us-heading{
+        font-size: 24px;
+    }
+    .about-us-description{
+        font-size: 18px;
+    }
+    section .card .card-title{
+        font-size: 24px;
+    }
+    section .card .card-text{
+        font-size: 18px;
+    }
+}
+#safety-cards-two .card .card-title{
+    font-size: 18px;
+    font-weight: bold;
+    color:black;
+    text-align: center;
+}
+#safety-cards-two .card .card-text{
+    font-size: 16px;
+    color: black;
+    text-align: start;
+}
