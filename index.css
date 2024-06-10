@@ -4,11 +4,13 @@
     padding: 0;
     
 }
-p{
-    font-family: "Poppins";
+p,li{
+    font-family: "Poppins", sans-serif;
 }
+
+
 h1,h2,h3,h4{
-    font-family: 'Lato';
+    font-family: 'Lato',sans-serif;
 }
 .y{
     border: 1px solid red;
@@ -72,8 +74,8 @@ header{
     }
 }
 .website-logo{
-    max-width: 100px;
-    height: auto;
+    width: 100%;
+    height: 100%
 }
 .small-devices-ul-list{
     height: 300px;
@@ -84,31 +86,23 @@ header{
 }
 .small-devices-ul-list li{
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 550;
     color: #262f36;
     border-bottom: 1px solid #262f36;
 }
 .small-devices-ul-list p{
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 400;
     color: #262f36;
 }
-@media screen and (min-width:768px) and (max-width:1023px) {
-    .small-devices-ul-list li{
-        font-size: 12px;
-    }
-}
-@media screen and (min-width:1024px) {
-    .small-devices-ul-list li{
-        font-size: 16px;
-    }
-}
+
 @media screen and (min-width:768px) {
     .small-devices-ul-list{
         height: 60px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
     }
     .small-devices-ul-list li{
         border-bottom: none;
@@ -159,22 +153,22 @@ header{
 }
 .carousel button{
     background-color:gray;
-    height: 40px;
-    width: 40px;
+    height: 20px;
+    width: 20px;
     align-self:center;
     margin: 15px;
+    border-radius: 10px;
 }
-.carousel .carousel-control-prev{
-    border-radius: 20px;
+
+.carousel  .carousel-control-prev-icon, .carousel .carousel-control-next-icon {
+    height: 15px;
+    width: 15px;
 }
 .carousel .carousel-control-prev-icon{
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='4' width='6.25' viewBox='0 0 320 512'%3E%3C!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3E%3Cpath fill='%23FFFFFF' d='M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z'/%3E%3C/svg%3E");
-}
-.carousel .carousel-control-next{
-    border-radius: 20px;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='2' width='4.25' viewBox='0 0 320 512'%3E%3C!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3E%3Cpath fill='%23FFFFFF' d='M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z'/%3E%3C/svg%3E");
 }
 .carousel .carousel-control-next-icon{
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='4' width='6.25' viewBox='0 0 320 512'%3E%3C!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3E%3Cpath fill='%23FFFFFF' d='M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='2' width='4.25' viewBox='0 0 320 512'%3E%3C!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3E%3Cpath fill='%23FFFFFF' d='M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z'/%3E%3C/svg%3E");
 }
 .active-slide{
     height: 150px;
@@ -193,7 +187,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     align-items:flex-start;
 }
 .active-slide h1{
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bolder;
     color: #006DB7;
 }
@@ -220,27 +214,25 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     align-items: center;
 }
 .description-container h1{
-    font-size: 18px;
+    line-height: 1.2;
+    font-family: 'Lato',sans-serif;
+    font-size: 26px;
     color: white;
+    text-align: center;
     font-weight: bolder;
+    color: #030303;
 }
 .description-container p{
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 500;
-    color:#fff;
-    text-align: justify;
+    color:#000;
+    text-align: left;
+    line-height: 2;
+    margin: 10px 0px 10px 10px;
 }
-@media screen and (min-width:768px) {
-    .description-container h1{
-        font-size: 26px;
-    }
-    .description-container p{
-        font-size: 18px;
-        text-align: center;
-    }
-}
+
+
 .services-section{
-    width: 100vw;
     background-image: url("https://res.cloudinary.com/dlwydxzdi/image/upload/v1713008725/BusinessApp/bg1_qlrfcp.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -259,9 +251,9 @@ background:rgba(10, 10, 10, 0.8);
 
 .form-input-container{
     display: flex;
-    flex-direction: row;
-    justify-content: baseline;
-    align-items: last baseline;
+    flex-direction:row;
+    justify-content:end;
+    align-items:first baseline;
 }
 .home-form-input{
     width: 100%;
@@ -275,15 +267,30 @@ background:rgba(10, 10, 10, 0.8);
 }
 
 
+.services-container .card{
+    width: 90%;
+    height: 500px;
+}
 
+.card-img-top{
+    height: 200px;
+}
+.card .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
 .card .card-title{
     color: #313c45;
     font-size: 20px;
     text-align: center;
     font-weight: bold;
+    margin:10px 0px 10px 0px;
 }
 .card .card-text{
-    font-size: 18px;
+    font-size: 13px;
+    line-height: 2;
 }
 .card button{
     border: none;
@@ -294,19 +301,150 @@ background:rgba(10, 10, 10, 0.8);
     color: #fff;
     font-size: 16px;
     background-color: #006db7;
+ 
 }
+
+.bg-container{
+    margin-top: 50px;
+    height: 100%;
+    background-image: url("https://res.cloudinary.com/dlwydxzdi/image/upload/v1717671922/BusinessApp/employee_pxxrmx.jpg");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    display: flex;
+}
+.stats-main-container{
+
+    padding: 75px 0px 70px 0px;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .70);
+}
+.stats-container{
+    margin-top: 75px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.stats-container i{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.stats-container h1{
+    font-size: 24px;
+    font-weight: bolder;
+}
+.stats-container h1::after{
+    content: "+";
+}
+.stats-container p{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.process-container{
+    margin-top: 25px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.process-container button{
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 3px solid #c1c4c7;
+    display: inline-block;
+    color: #006DB7;
+    padding-bottom: 10px;
+    font-size: 40px;
+}
+.process-container h1{
+    margin: 10px 0px 10px 0px;
+    color: #000;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.process-container p{
+    font-size: 13px;
+    text-align: left;
+}
+.process-container button:hover{
+    background-color: #006DB7;
+    color: #fff;
+}
+
+.faq-container{
+    padding:25px 0px 25px 0px;
+    background-color:#18496b;
+    height: auto;
+}
+
+
+.faq-container .accordion-item{
+    width: 98%;
+    margin-bottom: 5px;
+}
+
+.faq-container .accordion-body p{
+    font-size: 13px;
+    color: #000;
+}
+
+.faq-container .accordion-button{
+    font-weight: bold;
+    font-size: 14px;
+    background-color: transparent;
+    box-shadow: none;
+    
+}
+.faq-container .accordion-button:focus{
+    box-shadow: none;
+}
+
+
+.faq-container .accordion-button::after{
+    transform: rotate(-0.25turn);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='6' width='8.75' viewBox='0 0 448 512'%3E%3C!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3E%3Cpath d='M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z'/%3E%3C/svg%3E");
+}
+
+.faq-container .accordion-button:not(.collapsed){
+  color: #006DB7;
+  background-color: transparent;
+  box-shadow: none;
+
+
+}
+
+
+.faq-container .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='6' width='8.75' viewBox='0 0 448 512'%3E%3C!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3E%3Cpath d='M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z'/%3E%3C/svg%3E");
+    transform: var(--bs-accordion-btn-icon-transform);
+    color: red;
+}
+
+
+
+
 
 .footer-container{
     background-color: #1b2c3e;
     padding-top: 20px;
 }
 .footer-heading{
-    font-size: 18px;
+    font-size: 16px;
 color: #ffff00;
 font-weight: 500;
 }
 .footer-description{
-    font-size: 16px;
+    font-size: 13px;
     color: white;
     line-height: 30px;
     text-align: justify;

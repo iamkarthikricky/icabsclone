@@ -4,12 +4,7 @@
     padding: 0;
     
 }
-p{
-    font-family: "Poppins";
-}
-h1,h2,h3,h4{
-    font-family: 'Lato';
-}
+
 .about-us-banner-container{
    
     background-image: url('https://res.cloudinary.com/dlwydxzdi/image/upload/v1713073689/BusinessApp/aboutus_qjt9rv.jpg');
@@ -24,7 +19,7 @@ h1,h2,h3,h4{
 }
 
 .banner-heading{
-    font-size: 22px;
+    font-size: 24px;
     color: white;
     font-weight: bold;
     justify-self: center;
@@ -40,7 +35,6 @@ h1,h2,h3,h4{
     .banner-heading{
         justify-self: unset;
         align-self:unset;
-        font-size: 24px;
     }
 }
 .breadcrumb-container{
@@ -53,33 +47,24 @@ h1,h2,h3,h4{
 }
 .breadcrumb-container .breadcrumb-item a{
     text-decoration: none;
-    font-size: 16px;
+    font-size: 13px;
     color: white;
 }
 .breadcrumb-container .breadcrumb-item +.breadcrumb-item::before{
     color: #fff;
-    font-size: 16px;
+    font-size: 13px;
 }
 .breadcrumb-container .breadcrumb-item{
     color: #fff;
-    font-size: 16px;
+    font-size: 13px;
 }
-@media screen and (min-width:1200px) {
-    .breadcrumb-container .breadcrumb-item a{
-        font-size: 18px;
-    }
-    .breadcrumb-container .breadcrumb-item{
-        font-size: 18px;
-    }
-}
-
 .about-us-heading{
-    font-size: 22px;
+    font-size: 17px;
     color:#006DB7;
     font-weight: bold;
 }
 .about-us-description{
-    font-size: 16px;
+    font-size: 13px;
     text-align: justify;
 }
 
@@ -96,36 +81,20 @@ section .card .card-title{
     text-align: start;
 }
 section .card .card-text{
-    font-size: 16px;
+    font-size: 13px;
     color: white;
     text-align: start;
 }
 
-@media screen and (min-width:768px) {
-    .banner-heading{
-        font-size: 24px;
-    }
-    .about-us-heading{
-        font-size: 24px;
-    }
-    .about-us-description{
-        font-size: 18px;
-    }
-    section .card .card-title{
-        font-size: 24px;
-    }
-    section .card .card-text{
-        font-size: 18px;
-    }
-}
 #safety-cards-two .card .card-title{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     color:black;
     text-align: center;
+    text-wrap: nowrap;
 }
 #safety-cards-two .card .card-text{
-    font-size: 16px;
+    font-size: 13px;
     color: black;
     text-align: start;
 }
